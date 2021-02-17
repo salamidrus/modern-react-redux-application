@@ -1,14 +1,17 @@
-// Create a react component
+function getButtonText() {
+  return "Click Meh!";
+}
 
+// Create a react component
 const App = () => {
   return (
     <div>
-      <label class="label" for="name">
+      <label className="label" htmlFor="name">
         Enter name:
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "blue", color: "white" }}>
-        Submit
+        {getButtonText()}
       </button>
     </div>
   );
